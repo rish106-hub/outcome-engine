@@ -37,7 +37,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <main className="container">
-        <section className="grid min-h-[calc(100vh-4rem)] items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16">
+        <section className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center gap-8 py-10">
           <HeroContent />
           <ProductSimulation />
         </section>

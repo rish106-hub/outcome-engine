@@ -4,21 +4,21 @@ import ActionPackCard from "./ActionPackCard";
 
 const ProductSimulation = () => {
   return (
-    <div className="relative flex items-center justify-center py-8">
-      {/* Stacked Cards Container */}
-      <div className="relative w-full max-w-sm">
-        {/* Card 1: Decision Capsule - Back */}
-        <div className="absolute top-0 left-0 w-full transform -rotate-2 translate-y-4 opacity-90 scale-95">
+    <div className="flex w-full items-center justify-center py-4">
+      {/* Cards Container - Horizontal Grid on Desktop */}
+      <div className="grid w-full max-w-6xl gap-6 md:grid-cols-3">
+        {/* Card 1: Decision Capsule */}
+        <div className="w-full">
           <DecisionCapsuleCard />
         </div>
 
-        {/* Card 2: Commitment Contract - Middle */}
-        <div className="absolute top-0 left-0 w-full transform rotate-1 translate-y-2 opacity-95 scale-[0.98]">
+        {/* Card 2: Commitment Contract */}
+        <div className="w-full">
           <CommitmentContractCard />
         </div>
 
-        {/* Card 3: Action Pack - Front */}
-        <div className="relative w-full transform translate-y-0">
+        {/* Card 3: Action Pack */}
+        <div className="w-full">
           <ActionPackCard />
         </div>
       </div>
